@@ -1,0 +1,11 @@
+title: PokemonGo Fansite
+description: PokemonGo Information
+exclude: [
+  '_pagebuilder/',
+  '.idea/**',
+]
+theme: jekyll-theme-cayman
+gems:
+  - jekyll-mentions
+plugins:
+  - jekyll-relative-links
