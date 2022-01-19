@@ -221,10 +221,10 @@ body {
   }
 }
 
-.gridhead1 { grid-area: padding1; }
+.gridhead1 { grid-area: official_link; }
 .gridhead2 { grid-area: header; }
-.gridhead3 { grid-area: image; }
-.gridhead4 { grid-area: padding2; }
+.gridhead3 { grid-area: right_padding; }
+.gridhead4 { grid-area: image; }
 .gridhead5 { grid-area: nav_buttons; }
 .gridhead6 { grid-area: page_buttons; }
 
@@ -244,11 +244,8 @@ body {
     width: auto;
     text-align: center;
   }
-  div.gridhead3 {
-    width: auto;
-  }
   div.gridhead4 {
-    width: 280px;
+    width: auto;
   }
   div.gridhead5 {
     text-align: center;
@@ -258,40 +255,40 @@ body {
   }
   @include full {
     grid-template-areas:
-    'padding1 header header padding2'
-    'padding1 image image padding2'
+    'official_link header header right_padding'
+    'image image image image'
     'nav_buttons nav_buttons nav_buttons nav_buttons'
     'page_buttons page_buttons page_buttons page_buttons';
   }
   @include huge {
     grid-template-areas:
-    'padding1 header header padding2'
-    'padding1 image image padding2'
+    'official_link header header right_padding'
+    'image image image image'
     'nav_buttons nav_buttons nav_buttons nav_buttons'
     'page_buttons page_buttons page_buttons page_buttons';
   }
   @include large {
     grid-template-areas:
-    'padding1 header header padding2'
-    'padding1 image image padding2'
+    'official_link header header right_padding'
+    'image image image image'
     'nav_buttons nav_buttons nav_buttons nav_buttons'
     'page_buttons page_buttons page_buttons page_buttons';
   }
   @include medium {
     grid-template-areas:
-    'padding1 header header padding2'
-    'padding1 image image padding2'
+    'official_link header header right_padding'
+    'image image image image'
     'nav_buttons nav_buttons nav_buttons nav_buttons'
     'page_buttons page_buttons page_buttons page_buttons';
   }
   @include small {
-    grid-template-areas: 'padding1' 'header' 'image' 'padding2' 'nav_buttons' 'page_buttons';
+    grid-template-areas: 'official_link' 'header' 'image' 'nav_buttons' 'page_buttons';
     div.gridhead2 {
       text-align: center;
     }
-    div.gridhead3 {
-      text-align: center;
-    }
+  div.gridhead3 {
+    width: auto;
+  }
     div.gridhead5 {
       text-align: center;
     }
